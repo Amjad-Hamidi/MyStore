@@ -1,0 +1,12 @@
+<div *ngIf="product" class="product-detail-page">
+  <div class="image-section">
+    <img [src]="product.url" [alt]="product.name" />
+  </div>
+  <div class="info-section">
+    <h2>{{ product.name }}</h2>
+    <p class="price">{{ product.price | currency }}</p>
+    <p class="description">{{ product.description }}</p>
+    <button (click)="addToCart()" class="btn-add">Add to Cart</button>
+    <a routerLink="/" class="back-link">← Back to List</a>
+  </div>
+</div>

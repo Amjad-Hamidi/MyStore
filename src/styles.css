@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+/* الخطوط والتنسيق الأساسي */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+/* تحسين شكل الأزرار في كل مكان */
+button {
+  transition: all 0.2s ease;
+  font-family: inherit;
+  border-radius: 6px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+/* تحسين شكل المدخلات (Inputs) */
+input[type="number"], input[type="text"] {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 6px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #27ae60;
+  box-shadow: 0 0 5px rgba(39, 174, 96, 0.2);
+}
+
+/* تنسيق العناوين في الصفحات */
+h2 {
+  color: #2c3e50;
+  border-bottom: 3px solid #27ae60;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+}

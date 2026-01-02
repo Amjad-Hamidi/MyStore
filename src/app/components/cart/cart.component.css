@@ -1,0 +1,35 @@
+.cart-item {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  align-items: center;
+  padding: 15px;
+  background: white;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.remove-btn {
+  color: #dc3545;
+  background: none;
+  border: 1px solid #dc3545;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-btn:hover { background: #dc3545; color: white; }
+
+.cart-summary {
+  text-align: right;
+  padding: 20px;
+  font-size: 1.3rem;
+  border-top: 2px solid #eee;
+}
