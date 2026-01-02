@@ -6,6 +6,14 @@
     <h2>{{ product.name }}</h2>
     <p class="price">{{ product.price | currency }}</p>
     <p class="description">{{ product.description }}</p>
+    
+    <div class="quantity-selector">
+      <label for="qty">Quantity:</label>
+      <select id="qty" [(ngModel)]="selectedQuantity">
+        <option *ngFor="let q of [1,2,3,4,5]" [value]="q">{{q}}</option>
+      </select>
+    </div>
+
     <button (click)="addToCart()" class="btn-add">Add to Cart</button>
     <a routerLink="/" class="back-link">← Back to List</a>
   </div>

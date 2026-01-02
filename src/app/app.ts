@@ -5,30 +5,7 @@ import { RouterModule } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   imports: [RouterModule],
-  template: `
-    <header class="main-header">
-      <div class="container nav-wrapper">
-        <h1 class="logo" routerLink="/">MyStore</h1>
-        <nav>
-          <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Products</a>
-          <a routerLink="/cart" routerLinkActive="active">
-            <span class="cart-link">
-              <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="currentColor"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l66 280h360l78-280H246Zm-38-80h590q23 0 35 20.5t1 41.5L710-338q-12 42-46 66t-84 24H306l-20 80H120v-80h102l106-442-48-198v-80h80l28 120Zm104 360h360-360Z"/></svg>
-              Cart
-            </span>
-          </a>
-        </nav>
-      </div>
-    </header>
-
-    <main class="container page-content">
-      <router-outlet></router-outlet>
-    </main>
-
-    <footer class="main-footer">
-      <p>© 2026 MyStore - Amjad Hamidi</p>
-    </footer>
-  `,
+  templateUrl: './app.html',
   styleUrls: ['./app.css']
 })
-export class App {}
+export class App {} 
