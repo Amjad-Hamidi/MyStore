@@ -55,8 +55,13 @@ export class CartComponent implements OnInit {
   }
 
   remove(productId: number) {
+    const item = this.cartItems.find(i => i.product.id === productId);
+    const productName = item ? item.product.name : 'Item';
+
     this.cartService.removeFromCart(productId);
     this.calculateTotal();
+    
+    alert(`${productName} has been removed from your cart.`);
   }
 
   calculateTotal() {
